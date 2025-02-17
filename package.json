@@ -1,8 +1,8 @@
 {
-    "name": "plantillaphaser",
+    "name": "pruebas_phaser_daniel",
     "version": "1.0.0",
     "main": "./main.js",
-    "description": "Plantilla para juegos con Phaser",
+    "description": "Pruebas de Phaser por Daniel Jiménez, a ver qué es esto.",
     "scripts": {
         "build:win": "npm run electron && npx electron-builder --win --config",
         "build:mac": "npm run electron && npx electron-builder --mac --config",
@@ -13,15 +13,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/cleongh/plantillaphaser.git"
+        "url": "git+https://github.com/daniji09/PruebasPhaser.git"
     },
     "keywords": [],
-    "author": "Carlos León <cleon@ucm.es>",
+    "author": "Daniel Jiménez <daniji09@ucm.es>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/cleongh/plantillaphaser/issues"
+        "url": "https://github.com/daniji09/PruebasPhaser/issues"
     },
-    "homepage": "https://github.com/cleongh/plantillaphaser#readme",
+    "homepage": "https://github.com/daniji09/PruebasPhaser#readme",
     "type": "module",
     "devDependencies": {
         "electron": "^34.0.1",
