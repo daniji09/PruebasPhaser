@@ -1,6 +1,7 @@
-import Boot from './boot.js';
-import End from './end.js';
-import Level from './level.js';
+import Boot from './scenes/boot.js';
+import End from './scenes/end.js';
+import Level from './scenes/level.js';
+import HelloWorld from './scenes/hello-world.js';
 import Phaser from 'phaser';
 
 /**
@@ -17,7 +18,7 @@ let config = {
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
     },
     pixelArt: true,
-    scene: [Boot, Level, End],
+    scene: [HelloWorld, Boot, Level, End],
     physics: {
         default: 'arcade',
         arcade: {

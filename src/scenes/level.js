@@ -1,5 +1,5 @@
-import Platform from './platform.js';
-import Player from './player.js';
+import Platform from '../platform.js';
+import Player from '../player.js';
 import Phaser from 'phaser';
 
 
@@ -32,6 +32,12 @@ export default class Level extends Phaser.Scene {
         new Platform(this, this.player, this.bases, 500, 200);
         new Platform(this, this.player, this.bases, 150, 100);
         new Platform(this, this.player, this.bases, 850, 100);
+
+        let map = this.make.tilemap({key: 'map'});
+        let tiles = map.addTilesetImage('prueba_tileset', 'tileset');
+        let layerSuelo = map.createLayer('Suelo', tiles, 0, 0);
+        layerSuelo.setCollisionByExclusion([-1], true);
+
         this.spawn();
 
     }
